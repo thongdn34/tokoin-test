@@ -1,0 +1,14 @@
+@mixin font-face ($name, $path, $weight: "normal", $style: "normal", $ext: "otf") {
+  $format: "opentype";
+
+  @if $ext == "woff" {
+    $format: "woff";
+  }
+
+  @font-face {
+    font-family: $name;
+    font-weight: $weight;
+    font-style: $style;
+    src: url("#{$path}.#{$ext}") format($format);
+  }
+}

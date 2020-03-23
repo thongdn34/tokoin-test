@@ -1,0 +1,15 @@
+@function add-unit ($value, $unit: 'px') {
+  @if unitless($value) {
+    $base: 1px;
+
+    @if $unit == 'rem' {
+      $base: 1rem;
+    } @else if $unit == 'em' {
+      $base: 1em;
+    }
+
+    $value: $value * $base;
+  }
+
+  @return $value;
+}

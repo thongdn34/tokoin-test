@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+    <title>ToKoin NEWS</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but ToKoin work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <script>
+      window.PUBLIC_PATH = ''
+      window.CURSOR_PATH = {
+        default: './images/360-cursor.cur',
+        ie: './images/360-cursor-ie.cur'
+      }
+      window.API_PATH = window.API_PATH || {
+        VISUAL_360: './data/visual-360.json',
+        MODEL_FILTER: './data/car-model-filter.json',
+        MOTORIZATION_FILTER: './data/motorization-filter.json',
+        MOTORIZATION_LIST: './data/motorization-list.json',
+        MODEL_LIST: './data/car-model-list.json',
+        VERSION_LIST: './data/car-version-list.json',
+        COLOR_LIST: './data/car-exterior-list.json',
+        GARANTIE_LIST: './data/car-garantie-list.json',
+        API_LOGIN: './data/api-login.json',
+        SUMMARY_EQUIPMENT: './data/summary-equipment.json',
+        SUMMARY_FINANCEMENT: './data/summary-financement.json',
+        DEALER_LIST : './data/dealer-list.json',
+        SAVE_CONFIG: './data/save-config.json',
+        LOAD_CONFIG: './data/load-config.json',
+        NEWS_API: 'http://newsapi.org/v2/',
+      }
+      window.INFO_DESC = '<h3>Description of model xxx </h3> <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem'
+      window.WARNING_DESC = {
+        title: ' Êtes-vous sûr de vouloir changer de',
+        content: 'Cette action aura pour effet d’effacer vos préférences. Vous devrez procéder à nouvelle configuration.'
+      }
+      window.LINKS = {
+        SAVE_FORM_LINK_TERM: 'https://www.suzuki.fr/politique-de-protection-des-donnees-personnelles/',
+        SAVE_FORM_LINK_CTA: 'https://www.suzuki.fr/mentions-legales/',
+        SUCCESS_FORM_LINK_PHONE: 'https://www.suzuki.fr/politique-de-protection-des-donnees-personnelles/',
+        SUCCESS_FORM_LINK_CAR: 'https://www.suzuki.fr/demande-dessai-sur-route/',
+        SUCCESS_FORM_LINK_SHAKEHAND: 'https://www.suzuki.fr/concessionaires/',
+        SUCCESS_OFFER_PDF: 'https://www.w3schools.com?code_configuration=',
+        SUCCESS_PURCHASE_PDF: 'https://www.google.com?code_configuration='
+      },
+      window.CSRF_TOKEN = '1234'
+    </script>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

@@ -1,0 +1,27 @@
+@mixin size ($width, $height: $width) {
+  @if $width {
+    width: add-unit($width);
+  }
+
+  @if $height {
+    height: add-unit($height);
+  }
+}
+
+@mixin mq ($pixel, $desktop-first: false) {
+  $query: min;
+
+  @if $desktop-first {
+    $query: max;
+  }
+
+  @media only screen and (#{$query}-width: add-unit($pixel)) {
+    @content;
+  }
+}
+
+@mixin mq-between ($from, $to) {
+  @media only screen and (min-width: add-unit($from)) and (max-width: add-unit($to)) {
+    @content;
+  }
+}

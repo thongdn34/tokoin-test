@@ -1,0 +1,7 @@
+$z-index: (
+  loader: 10,
+);
+
+@function z-index($name) {
+  @return map-get($z-index, $name);
+}

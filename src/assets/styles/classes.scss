@@ -1,0 +1,41 @@
+.\--txt-big {
+  font-size: 1.2em;
+}
+
+.\--txt-small {
+  font-size: .6em;
+}
+
+.\--txt-center {
+  text-align: center;
+}
+
+.\--txt-right {
+  text-align: right;
+}
+
+.\--visibility-hidden {
+  visibility: hidden;
+}
+
+[class^="--bg-"], [class*=" --bg-"] {
+  @extend %bg-no-repeat;
+  @extend %bg-center;
+}
+
+.\--bg-cover {
+  @extend %bg-cover;
+}
+
+.\--bg-contain {
+  @extend %bg-contain;
+}
+
+.section {
+  padding-right: 3.2rem;
+  padding-left: 3.4rem;
+
+  @include mq(1024) {
+    padding-left: 3.3rem;
+  }
+}
